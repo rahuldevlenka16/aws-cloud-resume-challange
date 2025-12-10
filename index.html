@@ -2,66 +2,194 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Rahul Lenka - Resume</title>
+  <title>Rahul Dev Lenka - DevOps Engineer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>Rahul Lenka</h1>
-      <p class="tagline">DevOps Engineer | AWS & Automation Enthusiast</p>
-      <p class="contact">
-        Email: <a href="mailto:youremail@example.com">youremail@example.com</a> ·
-        LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">/yourprofile</a> ·
-        Location: India
-      </p>
+  <div class="resume">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="name">RAHUL DEV LENKA</h1>
+        <h2 class="role">DevOps Engineer</h2>
+      </div>
+      <div class="header-right">
+        <div class="contact-line">
+          <span>+91 9348400108</span>
+          <span>rdlenka16@gmail.com</span>
+          <span>Chennai, TN</span>
+        </div>
+        <div class="contact-line">
+          <a href="https://linkedin.com/in/rahul-dev-lenka/" target="_blank">
+            linkedin.com/in/rahul-dev-lenka/
+          </a>
+        </div>
+      </div>
     </header>
 
-    <section>
-      <h2>Summary</h2>
-      <p>
-        DevOps Engineer with experience in CI/CD, automation and cloud.
-        Interested in building reliable, scalable systems on AWS.
+    <div class="divider"></div>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h3 class="section-title">PROFESSIONAL SUMMARY</h3>
+      <p class="section-text">
+        DevOps Engineer with 2.5 years of experience in Agile environment, specializing in CI/CD automation,
+        cloud infrastructure, containerization, and monitoring. Strong hands-on skills in Jenkins, Docker,
+        Kubernetes, Terraform, AWS, and Linux. Proven ability to improve deployment speed, reliability, and
+        operational efficiency across enterprise applications.
       </p>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Cloud: AWS (EC2, S3, IAM, CloudWatch...)</li>
-        <li>DevOps: CI/CD, Git, GitHub Actions, Shell scripting</li>
-        <li>Containers: Docker (Kubernetes – learning)</li>
-        <li>IaC: Terraform (learning), AWS CloudFormation basics</li>
-        <li>Build tools: Maven, Jenkins (if applicable)</li>
+    <!-- Education -->
+    <section class="section">
+      <h3 class="section-title">EDUCATION</h3>
+
+      <div class="item">
+        <div class="item-main">
+          <h4 class="item-title">Master of Computer Applications (MCA)</h4>
+          <div class="item-subtitle">
+            Silicon Institute of Technology, Bhubaneswar, Odisha
+          </div>
+        </div>
+        <div class="item-dates">
+          2021–2023
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-main">
+          <h4 class="item-title">Bachelor of Computer Applications (BCA)</h4>
+          <div class="item-subtitle">
+            Rourkela Institute of Management and Studies, Odisha
+          </div>
+        </div>
+        <div class="item-dates">
+          2018–2021
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <h3 class="section-title">TECHNICAL SKILLS</h3>
+      <p class="section-text">
+        AWS (EC2, VPC, IAM, EKS, ECR, S3, ALB, CloudWatch), Terraform, Ansible, Jenkins, GitHub Actions, Maven,
+        Nexus, SonarQube, Trivy, Docker, Kubernetes, Helm, Prometheus, Grafana, Loki, OpenTelemetry, Bash, Python,
+        Git, GitHub, Bitbucket.
+      </p>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="section">
+      <h3 class="section-title">WORK EXPERIENCE</h3>
+
+      <div class="item">
+        <div class="item-main">
+          <h4 class="item-title">
+            DevOps Engineer | Financial Software and Systems (FSS) – Chennai
+          </h4>
+        </div>
+        <div class="item-dates">
+          Sep 2023 – Present (Full-time)
+        </div>
+      </div>
+      <ul class="bullet-list">
+        <li>Built and automated CI/CD pipelines in Jenkins, reducing deployment time by 40%.</li>
+        <li>Containerized microservices using Docker and deployed to AWS EKS using Helm, improving release consistency and reducing manual effort by 70%.</li>
+        <li>Implemented centralized monitoring using Prometheus, Grafana, and Loki, improving incident resolution by 50%.</li>
+        <li>Automated AWS infrastructure provisioning using Terraform (EC2, RDS, S3, IAM, VPC, EKS), reducing environment setup time by 30%.</li>
+        <li>Integrated security scans (SonarQube, Fortify, Trivy, OWASP ZAP) into CI pipelines for early vulnerability detection.</li>
+        <li>Created Ansible playbooks to automate WAR deployments on WildFly, reducing deployment time from 30 minutes to under 5 minutes.</li>
+        <li>Supported high-availability production systems with log analysis, troubleshooting, and on-call support.</li>
+      </ul>
+
+      <div class="item">
+        <div class="item-main">
+          <h4 class="item-title">
+            Software Intern | Financial Software and Systems (FSS)
+          </h4>
+        </div>
+        <div class="item-dates">
+          Feb 2023 – Aug 2023
+        </div>
+      </div>
+      <ul class="bullet-list">
+        <li>Performed Linux server administration, log debugging, and application deployments.</li>
+        <li>Migrated repositories from IBM CLM to Bitbucket, standardized GitFlow, and trained 5+ development teams.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Experience</h2>
-      <h3>DevOps Engineer – Company Name</h3>
-      <p class="meta">MM YYYY – Present</p>
-      <ul>
-        <li>Maintained CI/CD pipelines for Java applications.</li>
-        <li>Automated routine tasks and generated reports.</li>
-        <li>Collaborated with developers to improve release reliability.</li>
+    <!-- Projects -->
+    <section class="section">
+      <h3 class="section-title">PROJECTS</h3>
+
+      <div class="item">
+        <div class="item-main">
+          <h4 class="item-title">Cloud-Native Deployment on AWS EKS</h4>
+          <div class="item-subtitle">
+            Tools used: AWS EKS, Docker, Kubernetes, Helm, Terraform, Prometheus, Grafana
+          </div>
+          <div class="item-subtitle">
+            GitHub:
+            <a href="https://github.com/rahuldevlenka16/springboot-devopsified" target="_blank">
+              github.com/rahuldevlenka16/springboot-devopsified
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <ul class="bullet-list">
+        <li>Containerized a 3-tier Spring Boot application using Docker.</li>
+        <li>Provisioned AWS infrastructure (VPC, subnets, IAM roles, EKS, node groups) using Terraform modules.</li>
+        <li>Deployed workloads with Helm charts and implemented auto-scaling.</li>
+        <li>Configured Prometheus-Grafana monitoring dashboard for metrics and alerts.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Education</h2>
-      <p>Bachelor’s in XYZ – University Name – Year</p>
+    <!-- Certification -->
+    <section class="section">
+      <h3 class="section-title">CERTIFICATION</h3>
+
+      <div class="item">
+        <div class="item-main">
+          <h4 class="item-title">AWS Certified Cloud Practitioner (CLF-C02)</h4>
+          <div class="item-subtitle">
+            Issued: Nov 2025 | Credential ID: AWS05544373
+          </div>
+          <div class="item-subtitle">
+            Credly link:
+            <a href="https://www.credly.com/badges/7f44a261-7336-4cbc-abd3-f9847bfd5dcb" target="_blank">
+              credly.com/badges/7f44a261-7336-4cbc-abd3-f9847bfd5dcb
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+        <footer>
+        <p>Visitors: <span id="count">Coming soon...</span></p>
+        </footer>
+    </div>
     </section>
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>AWS Certified Cloud Practitioner</li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>Visitors: <span id="count">Coming soon...</span></p>
-    </footer>
-  </main>
+    
 </body>
+
+<script>
+  const apiUrl = "api url";
+
+  async function updateVisitorCount() {
+    try {
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+      document.getElementById("count").textContent = data.count;
+    } catch (error) {
+      console.error("Error fetching visitor count:", error);
+      document.getElementById("count").textContent = "N/A";
+    }
+  }
+
+  updateVisitorCount();
+</script>
+
 </html>
