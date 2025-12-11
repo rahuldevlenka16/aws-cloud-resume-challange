@@ -11,18 +11,54 @@ diagram:
 
 Flow:
 
-    Users: They send HTTPS requests to access a secured HTML website hosted on Amazon CloudFront.
+    1. User Interaction:
 
-    Amazon CloudFront: Acts as a CDN, serving the static website (HTML, CSS, JS) to the user.
+    Users access the secured HTML website by sending an HTTPS request.
 
-    S3 Bucket: Stores the static content of the website (e.g., index.html and CSS) and handles the synchronization of updates.
+    The website includes dynamic content, such as a visitor count, which needs to be updated in real-time.
 
-    API Gateway: Handles the GET request from the frontend to fetch the visitor count from the backend.
+    2. CloudFront & S3:
 
-    Lambda Function: Responds to API requests, fetching the current visitor count and interacting with DynamoDB to update the count.
+    The HTTPS request is routed through Amazon CloudFront, a Content Delivery Network (CDN).
 
-    DynamoDB: Stores the visitor count in a NoSQL database, updating each time a new request comes in.
+    CloudFront serves the static HTML website (e.g., index.html, styles.css) hosted in an S3 bucket.
 
-    GitHub Actions: Triggered by commits to the Frontend repository (like new HTML, CSS updates) which deploy the changes to S3 and CloudFront.
+    CloudFront ensures fast delivery of the static content to the user, with a global network of edge locations.
 
-    GitHub Secrets: Stores sensitive information such as AWS access keys used to manage the deployment process.
+    3. Frontend JS Fetch Request:
+
+    The JavaScript on the front end (the user's browser) sends a GET request to the API Gateway to retrieve the visitor count.
+
+    4. API Gateway:
+
+    API Gateway acts as a gateway between the frontend and backend.
+
+    It receives the request and invokes the Lambda function to process the request and retrieve the visitor count.
+
+    5. Lambda Function:
+
+    The Lambda function performs the necessary business logic to interact with DynamoDB, the database that holds the visitor count.
+
+    The Lambda function reads the visitor count, increments it, and writes the updated count back to DynamoDB.
+
+    It then responds with the updated visitor count in JSON format ({count: N}).
+
+    6. DynamoDB:
+
+    DynamoDB is the NoSQL database that stores the visitor count.
+
+    Every time the Lambda function processes a request, it updates the visitor count in DynamoDB.
+
+    7. GitHub Actions (CI/CD):
+
+    GitHub Actions are triggered when changes are made to the Frontend repository (e.g., when new HTML or CSS content is committed).
+
+    The Actions use GitHub Secrets (e.g., AWS credentials) to securely deploy the updated content to S3 and invalidate CloudFront to ensure the new content is served.
+
+    8. Frontend Deployment:
+
+    After a new commit is pushed to the Frontend repository on GitHub, the Frontend pipeline (part of GitHub Actions) is triggered.
+
+    The pipeline uses AWS access keys from GitHub Secrets to sync the updated static files to the S3 bucket.
+
+    If necessary, CloudFront is invalidated to ensure that users receive the latest version of the website.
