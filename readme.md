@@ -7,7 +7,7 @@ Work in progress..
 
 diagram:
 
-![alt text](<aws diagram.png>)
+![alt text](<images/aws diagram.png>)
 
 Flow:
 
@@ -62,3 +62,25 @@ Flow:
     The pipeline uses AWS access keys from GitHub Secrets to sync the updated static files to the S3 bucket.
 
     If necessary, CloudFront is invalidated to ensure that users receive the latest version of the website.
+
+
+
+Screenshots:
+
+Sample resume from cloudfront url with visitor counts
+![alt text](images/resume-website.png)
+
+
+s3 bucket with static resume content
+![alt text](images/s3.png)
+
+
+API gateway with GET reoute and lambda integration
+![alt text](images/image.png)
+
+Lambda function with API gateway trigger
+![alt text](images/lambda-func.png)
+
+
+DynamoDB visitor-count table
+![alt text](images/dynamodb.png)
