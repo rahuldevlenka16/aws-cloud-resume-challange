@@ -7,7 +7,8 @@ Work in progress..
 
 Architecture diagram:
 
-<img width="1132" height="622" alt="aws diagram" src="https://github.com/user-attachments/assets/9aa44f27-3cfe-42f7-8cee-2ee49736c129" />
+<!-- <img width="1132" height="622" alt="aws diagram" src="https://github.com/user-attachments/assets/9aa44f27-3cfe-42f7-8cee-2ee49736c129" /> -->
+<img width="1506" height="701" alt="2" src="https://github.com/user-attachments/assets/34a011b7-3166-4a82-8c54-94b6f910f6bb" />
 
 
 Flow:
