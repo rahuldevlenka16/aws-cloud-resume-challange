@@ -85,3 +85,22 @@ Lambda function with API gateway trigger
 
 DynamoDB visitor-count table
 ![alt text](images/dynamodb.png)
+
+
+Frontend github action
+![alt text](images/frontend-yaml.png)
+
+Before running the pipeline
+![alt text](images/before.png)
+
+After running the pipeline
+![alt text](images/after.png)
+
+before cloudfront invalidation
+![alt text](images/old-resume.png)
+
+after cloudfront invalidation
+![alt text](images/new-resume.png)
+
+it created and updated in console
+![alt text](images/invalidation-success.png)
