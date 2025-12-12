@@ -5,9 +5,10 @@ The goal is to deploy a fully functional, secure, serverless resume website with
 
 Work in progress..
 
-diagram:
+Architecture diagram:
 
-![alt text](<images/aws diagram.png>)
+<img width="1132" height="622" alt="aws diagram" src="https://github.com/user-attachments/assets/9aa44f27-3cfe-42f7-8cee-2ee49736c129" />
+
 
 Flow:
 
@@ -15,7 +16,7 @@ Flow:
 
     Users access the secured HTML website by sending an HTTPS request.
 
-    The website includes dynamic content, such as a visitor count, which needs to be updated in real-time.
+    The website includes Remsume created wiht HTML and CSS, it also show visitor count which is updated in real-time by JS function.
 
     2. CloudFront & S3:
 
