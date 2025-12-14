@@ -53,7 +53,14 @@ It demonstrates practical experience with AWS, CI/CD, Serverless Architecture, A
 Architecture diagram:
 
 <!-- <img width="1132" height="622" alt="aws diagram" src="https://github.com/user-attachments/assets/9aa44f27-3cfe-42f7-8cee-2ee49736c129" /> -->
-<img width="1506" height="701" alt="2" src="https://github.com/user-attachments/assets/34a011b7-3166-4a82-8c54-94b6f910f6bb" />
+<!-- <img width="1506" height="701" alt="2" src="https://github.com/user-attachments/assets/34a011b7-3166-4a82-8c54-94b6f910f6bb" /> -->
+<img width="2445" height="1451" alt="CRC original" src="https://github.com/user-attachments/assets/b145b95c-7e07-4864-9b71-6b2215d40d57" />
+
+
+<!-- <img width="1819" height="1048" alt="cicd" src="https://github.com/user-attachments/assets/65e68d7b-614c-4470-9d59-04f1193d383a" /> -->
+
+
+<!-- <img width="1893" height="1027" alt="runtime" src="https://github.com/user-attachments/assets/11806686-c377-40d1-ac8b-d93b11a70cb6" /> -->
 
 
 Architecture Flow:
@@ -72,7 +79,11 @@ Architecture Flow:
     
     API Gateway forwards this request to the Lambda function.
     
-    Lambda reads, increments, and updates the visitor count in DynamoDB, then returns the new count.
+    Lambda reads, increments, and updates the visitor count in DynamoDB which reponds with new count.
+    
+    Lambda forwards the new count to API Gateway.
+
+    API Gateway forwards JSON response to Website.
     
     The website updates the displayed visitor count dynamically based on the Lambda response.
 
