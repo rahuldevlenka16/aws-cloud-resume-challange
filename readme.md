@@ -1,4 +1,6 @@
-Work in progress..
+Update 1 : added terraaform code for complete infra provising (cloudfront, s3, api GW, lambda, dynamodb), refer to this github repo : https://github.com/rahuldevlenka16/Terraform-CRC-infra
+
+
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws)
 ![CloudFront](https://img.shields.io/badge/CloudFront-CDN-purple?logo=amazonaws)
@@ -6,7 +8,6 @@ Work in progress..
 ![Lambda](https://img.shields.io/badge/Lambda-Serverless-orange?logo=awslambda)
 ![DynamoDB](https://img.shields.io/badge/DynamoDB-NoSQL-4053D6?logo=amazon-dynamodb)
 ![API Gateway](https://img.shields.io/badge/API%20Gateway-REST%20API-blueviolet?logo=amazonaws)
-
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=githubactions)
 ![Serverless](https://img.shields.io/badge/Serverless-Architecture-FD5750?logo=serverless)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?logo=javascript)
@@ -18,6 +19,8 @@ Work in progress..
 This project is a complete implementation of the Cloud Resume Challenge, featuring a secure static website hosted on AWS, a fully serverless backend for tracking visitor count, and CI/CD automation using GitHub Actions.
 
 It demonstrates practical experience with AWS, CI/CD, Serverless Architecture, Automation, and Full-Stack Cloud Development.
+
+The challange : https://cloudresumechallenge.dev/docs/the-challenge/aws/
 
 🚀 Features
 
