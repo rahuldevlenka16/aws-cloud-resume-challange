@@ -1,4 +1,4 @@
-Update 1 : added terraaform code for complete infra provising (cloudfront, s3, api GW, lambda, dynamodb), refer to this github repo : https://github.com/rahuldevlenka16/Terraform-CRC-infra
+Update 1 : added terraaform code for complete infra provisioning (cloudfront, s3, api GW, lambda, dynamodb), refer to this github repo : https://github.com/rahuldevlenka16/Terraform-CRC-infra
 
 
 
