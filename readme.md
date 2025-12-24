@@ -10,7 +10,6 @@ Update 1 : added terraaform code for complete infra provising (cloudfront, s3, a
 ![API Gateway](https://img.shields.io/badge/API%20Gateway-REST%20API-blueviolet?logo=amazonaws)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=githubactions)
 ![Serverless](https://img.shields.io/badge/Serverless-Architecture-FD5750?logo=serverless)
-![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?logo=javascript)
 ![Python](https://img.shields.io/badge/Python-Lambda%20Function-3776AB?logo=python)
 
 
